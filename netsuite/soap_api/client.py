@@ -103,7 +103,7 @@ class NetSuiteSoapApi:
     def _generate_transport(self) -> zeep.transports.AsyncTransport:
         return AsyncNetSuiteTransport(
             self.wsdl_url,
-            session=self._generate_session(),
+            #  session=self._generate_session(),
             cache=self.cache,
         )
 
